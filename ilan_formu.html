@@ -2,88 +2,105 @@
 
 <head>
     <title> İlan Sayfası</title>
-    <link rel="stylesheet" href="css/stil_form.css">
+    <link rel="stylesheet" href="css/stil.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <h3>İlan Formu</h3>
-    <form>
-        <table>
+    <header>
+        <h1> Hayvan dostlarımıza yuva bulalım! </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a> </li>
+                <li><a href="about.html"> Hakkımda </a></li>
+                <li><a href="ilan_formu.html" class="current"> İlan Formu </a></li>
+                <li> <a href="basvuru_formu.html">Başvuru Formu</a></li>
+                <li><a href="mailto:iremozkaya2209@gmail.com" target="_blank">Mail ile ulaşın</a></li>
+            </ul>
+        </nav>
 
-            <tr>
-                <td>Adınız: </td>
-                <td>
-                    <input type="text">
-                </td>
-            </tr>
+    </header>
 
-            <tr>
-                <td>Soyadınız: </td>
-                <td>
-                    <input type="text">
-                </td>
-            </tr>
+    <main>
+        <h1>İlan Formu</h1>
+        <form>
+            <table>
 
-            <tr>
-                <td>Email: </td>
-                <td>
-                    <input type="email">
-                </td>
-            </tr>
+                <tr>
+                    <td>Adınız: </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
 
-            <tr>
-                <td>Telefon: </td>
-                <td>
-                    <input type="number">
-                </td>
-            </tr>
+                <tr>
+                    <td>Soyadınız: </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
 
-            <tr>
-                <td>Hayvanınızın cinsi:</td>
-                <td>
-                    <select>
-                        <option></option>
-                        <option>Kedi</option>
-                        <option>Köpek</option>
-                        <option>Hamster</option>
-                        <option>Balık</option>
-                        <option>Maymun</option>
-                        <option>Kuş</option>
-                    </select>
+                <tr>
+                    <td>Email: </td>
+                    <td>
+                        <input type="email">
+                    </td>
+                </tr>
 
-                </td>
-            </tr>
-            <tr>
-                <td>Neden sahiplendirmek istiyorsunuz?</td>
-                <td><textarea></textarea></td>
-            </tr>
+                <tr>
+                    <td>Telefon: </td>
+                    <td>
+                        <input type="number">
+                    </td>
+                </tr>
 
-            <tr>
-                <td>Hayvanınızın bir hastalığı var mı?</td>
-                <td>
-                    <input type="radio" id="evet" name="hastalik">evet
-                    <input type="radio" id="hayır" name="hastalik">hayır<br>
-                    <textarea>Varsa açıklayınız.</textarea>
-                </td>
-            </tr>
-            <tr>
-                <td>Hayvanınız insanlarla, çocuklarla ve diğer evcil hayvanlarla anlaşabiliyor mu?</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Hayvan verilirken yanında temel eşyaları da teslim edilecek mi?</td>
-                <td><textarea></textarea> </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <input type="button" value="kaydet">
-                </td>
-            </tr>
-            </tr>
-        </table>
-    </form>
+                <tr>
+                    <td>Hayvanınızın cinsi:</td>
+                    <td>
+                        <select>
+                            <option></option>
+                            <option>Kedi</option>
+                            <option>Köpek</option>
+                            <option>Hamster</option>
+                            <option>Balık</option>
+                            <option>Maymun</option>
+                            <option>Kuş</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Neden sahiplendirmek istiyorsunuz?</td>
+                    <td><textarea></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>Hayvanınızın bir hastalığı var mı?</td>
+                    <td>
+                        <input type="radio" id="evet" name="hastalik">evet
+                        <input type="radio" id="hayır" name="hastalik">hayır<br>
+                        <textarea placeholder="Varsa açıklayınız."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hayvanınız insanlarla, çocuklarla ve diğer evcil hayvanlarla anlaşabiliyor mu?</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Hayvan verilirken yanında temel eşyaları da teslim edilecek mi?</td>
+                    <td><textarea placeholder="Açıklayınız."></textarea> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="button">KAYDET</button>
+                    </td>
+                </tr>
+                </tr>
+            </table>
+        </form>
+
+    </main>
 </body>
 
 </html>

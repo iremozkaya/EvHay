@@ -1,0 +1,116 @@
+:root {
+    --ana-renk: #14213D;
+    --vurgu-renk: #e2a77a;
+    --baglanti-renk: rgb(38, 137, 191);
+    --zemin: #fafaef;
+    --metin: #1F2937;
+    --kenar: #D0D5DD;
+    --header: #f9e8ed;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    background-color: var(--ana-renk);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+header h1 {
+    color: var(--header);
+    font-size: 1.4rem;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 14px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    border-radius: 6px;
+    color: var(--header);
+}
+
+nav a:hover,
+nav a.current {
+    background-color: var(--zemin);
+    color: var(--ana-renk);
+}
+
+main {
+    max-width: 1200px;
+    margin: 24px;
+    padding: 32px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid var(--kenar);
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--ana-renk);
+    background-color: var(--zemin);
+}
+
+
+h1 {
+    color: var(--ana-renk);
+}
+
+h5 {
+    font-size: 1.4rem;
+    color: rgb(46, 82, 32);
+    font-weight: bold;
+}
+
+a {
+    color: var(--baglanti-renk);
+}
+
+a:hover {
+    color: var(--vurgu-renk);
+}
+
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid var(--kenar);
+    border-radius: 6px;
+    background-color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--vurgu-renk);
+}
+
+button {
+    padding: 10px 24px;
+    border-radius: 6px;
+    background-color: var(--vurgu-renk);
+    color: white;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: #9CA3AF;
+    font-style: italic;
+    font-size: 0.9rem;
+}
